@@ -1,27 +1,21 @@
-package mainRunner.login;
+package mainRunner.gui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class Main extends Application {
-
+public class MainInterface extends Application {
     public static void main(String[] args) {
         launch();
     }
-
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = new FXMLLoader().load(getClass().getResource("mainFXML.fxml"));
-        Scene scene = new Scene(root,600,400);
-        stage.setTitle("Please Login");
-        stage.setScene(scene);
+        //insert main scene information here.
+        Parent root = new FXMLLoader().load(getClass().getResource("mainInterfaceFXML.fxml"));
+        stage.setScene(new Scene(root,600,400, Color.BISQUE));
         stage.show();
-
     }
 }
