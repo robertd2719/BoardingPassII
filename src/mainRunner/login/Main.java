@@ -1,4 +1,4 @@
-package mainRunner;
+package mainRunner.login;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,5 +22,6 @@ public class Main extends Application {
         stage.setTitle("Please Login");
         stage.setScene(scene);
         stage.show();
+
     }
 }
